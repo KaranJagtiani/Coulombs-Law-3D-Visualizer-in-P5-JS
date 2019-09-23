@@ -1,0 +1,183 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+    overflow: hidden;
+}
+
+.headers h3{
+    position: absolute;
+    color: white;
+}
+
+#c_1{
+    color: #ffffff;
+    margin-left: 1110px;
+    margin-top: 30px;
+}
+
+#c_2{
+    color: #ffffff;
+    margin-left: 1110px;
+    margin-top: 185px;
+}
+
+#h_1{
+    color: rgb(255, 50, 50);
+    margin-left: 1110px;
+    margin-top: 64px;
+}
+
+#h_2{
+    color: rgb(54, 255, 121);
+
+    margin-left: 1110px;
+    margin-top: 98px;
+}
+
+#h_3{
+    color: rgb(30, 30, 255);
+    margin-left: 1110px;
+    margin-top: 130px;
+}
+
+#h_4{
+    color: rgb(255, 50, 50);
+    margin-left: 1110px;
+    margin-top: 220px;
+}
+
+#h_5{
+    color: rgb(54, 255, 121);
+    margin-left: 1110px;
+    margin-top: 255px;
+}
+
+#h_6{
+    color: rgb(30, 30, 255);
+    margin-left: 1110px;
+    margin-top: 288px;
+}
+
+.Inputs{
+    margin-left: 1160px;
+    position: absolute;
+}
+.Inputs2{
+    margin-left: 1160px;
+    margin-top: 187px;
+    position: absolute;
+}
+
+#q1{
+    width: 50px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 30px;
+}
+
+#qP{
+    width: 50px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 30px;
+}
+
+#input1{
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+}
+
+#input2{
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+#input3{
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+#q2{
+    width: 50px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: -20px;
+}
+
+#qP2{
+    width: 50px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: -20px;
+}
+
+#input4{
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+#input5{
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+#input6{
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+.answer{
+    margin-top: 250px;
+    margin-left: 900px;
+    position: absolute;
+}
+
+.text{
+    color: #ffffff;
+}
+
+.inline{
+    display: inline;
+}
+
+#p1{
+    color: #ffffff;
+}
+
+.line{
+    margin-bottom: -5px;
+    margin-left: 75px;
+}
+
+.divide{
+    margin-top: -10px
+}
+
+.bDiv{
+    margin-top: -0.01px;
+}
+
+.left{
+    margin-left: 45px;
+}
+
+.left1{
+    margin-left: 35px;
+}
