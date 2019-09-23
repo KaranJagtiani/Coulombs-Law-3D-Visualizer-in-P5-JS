@@ -1,0 +1,14 @@
+{
+  "name": "coulumbs-law-3d",
+  "version": "1.0.0",
+  "description": "Simulating Vector Form Of Coulumb's Law in 3D Space",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Karan Jagtiani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
