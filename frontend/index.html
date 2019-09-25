@@ -9,6 +9,8 @@
     <script src='main.js'></script>
     <script src="p5.min.js"></script>
     <script src="dom.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel='stylesheet' href='style.css'>
 </head>
 
@@ -27,8 +29,8 @@
     </div>
     <div class='Inputs'>
         <input class="inline" id='q1' type='textbox'>
-        <p class="text inline">Power</p>
-        <input class="inline" id='qP' type='textbox'>
+        <p class="text inline"> x10</p>
+        <sup><input class="inline" id='qP' type='textbox'></sup>
         <br>
         <input id='input1' type='textbox'>
         <br>
@@ -39,8 +41,8 @@
 
     <div class='Inputs2'>
         <input class="inline" id='q2' type='textbox'>
-        <p class="text inline">Power</p>
-        <input class="inline" id='qP2' type='textbox'>
+        <p class="text inline"> x10</p>
+        <sup><input class="inline" id='qP2' type='textbox'></sup>
         <br>
         <input id='input4' type='textbox'>
         <br>
@@ -50,6 +52,15 @@
     </div>
 
     <div class="answer">
+        <!--
+        <div>
+            <p class="text left">1</p>
+            <p class="text inline divide"> F<sub>12</sub> = _____ . Q1.Q2( </p>
+
+            <p class="text bDiv left1">4 &#960 &#949<sub>0</sub></p>
+        </div>
+        -->
+        <!--
         <div>
             <p class="text inline"> Q1 = </p>
             <p class="text inline" id="qD"></p>
@@ -59,14 +70,16 @@
             <p class="text inline"> Q2 = </p>
             <p class="text inline" id="qD2"></p>
         </div>
-        <p class="text">Euclidian Distance: </p>
+        -->
 
+        <!--
         <div>
             <p class="text inline"> R21 = </p>
             <p class="text inline" id="r21i"></p>
             <p class="text inline" id="r21j"></p>
             <p class="text inline" id="r21k"></p>
         </div>
+        
 
         <div id="l1" class="text line"></div>
 
@@ -84,10 +97,12 @@
         <p class="text inline" id="p6"></p>
         <p class="text inline">)<sup>2</sup></p>
 
+        
         <div>
             <p class="text inline"> | R21 | = </p>
             <p class="text inline" id="r21"></p>
         </div>
+        
 
         <div>
             <p class="text inline"> | R21 |<sup>3</sup>= </p>
@@ -98,25 +113,56 @@
 
         <div>
             <p class="text left">1</p>
-            <p class="text inline divide"> F = _____ . Q1.Q2( </p>
+            <p class="text inline divide"> F<sub>12</sub> = _____ . Q1.Q2( </p>
             <p class="text inline" id="r21i"></p>
             <p class="text inline" id="r21j"></p>
             <p class="text inline" id="r21k"></p>
             <p class="text bDiv left1">4 &#960 &#949<sub>0</sub></p>
         </div>
+-->
+        <div>
+            <p class="text inline"> F<sub>12</sub> = </p>
+            <p class="text inline" id="t1"></p>
+            <p class="text inline"><b>i</b></p>
+            <p class="text inline" id="t2"></p>
+            <p class="text inline"><b>j</b></p>
+            <p class="text inline" id="t3"></p>
+            <p class="text inline"><b>k</b></p>
+        </div>
 
+        <div>
+            <p class="text inline"> F<sub>21</sub> = - </p>
+            <p class="text inline">( </p>
+            <p class="text inline" id="t4"></p>
+            <p class="text inline"><b>i</b></p>
+            <p class="text inline" id="t5"></p>
+            <p class="text inline"><b>j</b></p>
+            <p class="text inline" id="t6"></p>
+            <p class="text inline"><b>k</b></p>
+            <p class="text inline"> )</p>
+        </div>
+
+        <div>
+            <button onclick="window.open('about.html')" id = "aboutBtn" class = "btn btn-danger button">About</button>
+        </div>
+
+        <!--
         <div>
             <p class="text inline"> F1 = </p>
             <p class="text inline" id="t1"></p>
+            <p class="text inline"><b>i</b></p>
         </div>
         <div>
             <p class="text inline"> F2 = </p>
             <p class="text inline" id="t2"></p>
+            <p class="text inline"><b>j</b></p>
         </div>
         <div>
             <p class="text inline"> F3 = </p>
             <p class="text inline" id="t3"></p>
+            <p class="text inline"><b>k</b></p>
         </div>
+    -->
 
     </div>
 

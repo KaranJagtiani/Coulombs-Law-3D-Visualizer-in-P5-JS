@@ -144,12 +144,13 @@ body{
 }
 
 .answer{
-    margin-top: 250px;
-    margin-left: 900px;
+    margin-top: 350px;
+    margin-left: 1110px;
     position: absolute;
 }
 
 .text{
+    font-size: 21px;
     color: #ffffff;
 }
 
@@ -180,4 +181,11 @@ body{
 
 .left1{
     margin-left: 35px;
+}
+
+.button{
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 45px;
+    width: 150px;
 }

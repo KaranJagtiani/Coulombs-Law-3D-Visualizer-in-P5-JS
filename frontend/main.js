@@ -31,13 +31,31 @@ function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
 }
 
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
+
+// formatAns( str => {
+//     return str;
+// })
+
+function formatStr(str) {
+    var res;
+    if (str == "NaN")
+        res = String("0");
+    else {
+        res = str.substring(0, 4);
+    }
+    return res;
+}
+
 function integrate(x, y, z) {
 
-    // First Electron
+    // First Particle
     var Q1 = document.getElementById("q1").value;
     var qP = document.getElementById("qP").value;
     Q1 *= Math.pow(10, qP);
-    document.getElementById("qD").innerHTML = String(Q1);
+    // document.getElementById("qD").innerHTML = String(Q1);
 
     var m = document.getElementById("input1").value;
     var n = document.getElementById("input2").value;
@@ -69,12 +87,12 @@ function integrate(x, y, z) {
     z1 = p / 35;
 
 
-    // Second Electron
+    // Second Particle
 
     var Q2 = document.getElementById("q2").value;
     var qP2 = document.getElementById("qP2").value;
     Q2 *= Math.pow(10, qP2);
-    document.getElementById("qD2").innerHTML = String(Q2);
+    //document.getElementById("qD2").innerHTML = String(Q2);
 
     //Q2.value = 
     var q = document.getElementById("input4").value;
@@ -93,8 +111,13 @@ function integrate(x, y, z) {
         fill(0, 0, 200);
         pop();
     }
-
-    document.getElementById("p1").innerHTML = " ( " + String(m /= 35);
+    m /= 35;
+    q /= 35;
+    n /= (-35);
+    r /= (-35);
+    p /= (-35);
+    s /= (-35);
+    /*document.getElementById("p1").innerHTML = " ( " + String(m /= 35);
     document.getElementById("p4").innerHTML = " - " + String(q /= 35);
 
     document.getElementById("p2").innerHTML = " + ( " + String(n /= (-35));
@@ -125,31 +148,48 @@ function integrate(x, y, z) {
         document.getElementById("l1").innerHTML = "_____________________________";
     }
 
-    let r21i = m - q;
-    let r21j = n - r;
-    let r21k = p - s;
     document.getElementById("r21i").innerHTML = String(r21i) + "i   ";
     document.getElementById("r21j").innerHTML = String(r21j) + "j   ";
     document.getElementById("r21k").innerHTML = String(r21k) + "k   ";
 
+*/
 
-
+    let r21i = m - q;
+    let r21j = n - r;
+    let r21k = p - s;
     let r21 = Math.sqrt(
         Math.pow(m - q, 2) + Math.pow(n - r, 2) + Math.pow(p - s, 2)
     );
     let r213 = Math.pow(r21, 3);
-    document.getElementById("r21").innerHTML = String(r21);
-    document.getElementById("r213").innerHTML = String(r213);
+    //document.getElementById("r21").innerHTML = String(r21);
+    //document.getElementById("r213").innerHTML = String(r213);
 
     let t1 = (k * r21i * Q1 * Q2) / r213;
-    document.getElementById("t1").innerHTML = String(t1) + "i";
-    
+    t1 = formatStr(String(t1));
+    document.getElementById("t1").innerHTML = t1;
+
     let t2 = (k * r21j * Q1 * Q2) / r213;
-    document.getElementById("t2").innerHTML = String(t2) + "j"; 
-    
+    t2 = formatStr(String(t2));
+    document.getElementById("t2").innerHTML = t2;
+
     let t3 = (k * r21k * Q1 * Q2) / r213;
-    t3 = round(t3, qP2);
-    document.getElementById("t3").innerHTML = String(t3) + "k";
+    t3 = formatStr(String(t3));
+    document.getElementById("t3").innerHTML = t3;
+
+    let t4 = (k * r21i * Q1 * Q2) / r213;
+    t4 = formatStr(String(t4));
+    document.getElementById("t4").innerHTML = t4;
+
+    let t5 = (k * r21j * Q1 * Q2) / r213;
+    t5 = formatStr(String(t5));
+    document.getElementById("t5").innerHTML = t5;
+
+    let t6 = (k * r21k * Q1 * Q2) / r213;
+    t6 = formatStr(String(t6));
+    document.getElementById("t6").innerHTML = t6;
+
+    btn = document.getElementById('aboutBtn');
+    
 }
 
 
