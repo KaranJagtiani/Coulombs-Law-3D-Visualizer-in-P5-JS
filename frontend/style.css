@@ -19,7 +19,7 @@ body{
 #c_2{
     color: #ffffff;
     margin-left: 1110px;
-    margin-top: 185px;
+    margin-top: 190px;
 }
 
 #h_1{
@@ -44,19 +44,19 @@ body{
 #h_4{
     color: rgb(255, 50, 50);
     margin-left: 1110px;
-    margin-top: 220px;
+    margin-top: 230px;
 }
 
 #h_5{
     color: rgb(54, 255, 121);
     margin-left: 1110px;
-    margin-top: 255px;
+    margin-top: 265px;
 }
 
 #h_6{
     color: rgb(30, 30, 255);
     margin-left: 1110px;
-    margin-top: 288px;
+    margin-top: 305px;
 }
 
 .Inputs{
@@ -145,7 +145,7 @@ body{
 
 .answer{
     margin-top: 350px;
-    margin-left: 1110px;
+    margin-left: 1100px;
     position: absolute;
 }
 
