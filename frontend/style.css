@@ -5,6 +5,15 @@ body{
     overflow: hidden;
 }
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+@-ms-viewport {
+    width: device-width ;
+  }
+
 .headers h3{
     position: absolute;
     color: white;
