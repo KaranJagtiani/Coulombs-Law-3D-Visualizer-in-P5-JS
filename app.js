@@ -9,6 +9,5 @@ app.use(express.static('frontend'));
 const host = '0.0.0.0';
 
 app.listen(port, () => {
-    console.log(process.env.PORT);
-    console.log("Server Started on Port: Heroku");
+    console.log("Server Started on Port:", port);
 });
