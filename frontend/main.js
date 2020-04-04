@@ -91,7 +91,7 @@ function integrate() {
         pop();
     }
 
-    // Resetting both particle coordinates back to their original values.
+    // Resetting both particle coordinates back to their original value.
     x1 /= 35;
     y1 /= (-35);
     z1 /= (-35);
