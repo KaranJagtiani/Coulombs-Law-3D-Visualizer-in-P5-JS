@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +29,7 @@
         <h3 span id='h_6'>Z2 : </h3>
     </div>
     <div class='Inputs'>
-        <input class="inline" id='q1' type='number'>
+        <input class="inline" id='q1' type='number' autofocus>
         <p class="text2 inline"> x10</p>
         <sup><input class="inline" id='qP' type='number'></sup>
         <br>
@@ -74,13 +75,32 @@
             <p class="inline"> )</p>
         </div>
 
-        
+
     </div>
-    <div class = "about_btn">
+    <div class="about_btn">
         <a href="about.html">
             <button id="aboutBtn" class="btn button">About</button>
         </a>
     </div>
+
+    <script>
+        jQuery.extend(jQuery.expr[':'], {
+            focusable: function (el, index, selector) {
+                return $(el).is('a, button, :input, [tabindex]');
+            }
+        });
+
+        $(document).on('keypress', 'input,select', function (e) {
+            if (e.which == 13) {
+                e.preventDefault();
+                // Get all focusable elements on the page
+                var $canfocus = $(':focusable');
+                var index = $canfocus.index(this) + 1;
+                if (index >= $canfocus.length) index = 0;
+                $canfocus.eq(index).focus();
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -6,9 +6,10 @@ body {
 }
 
 input:focus {
-    background-color: #ffcc7a;
+    background-color: #494949;
     outline: none;
-    border: 3px solid #ff1548;
+    border: 3px solid #ff3758;
+    caret-color: #ffffff;
 }
   
 .headers h3 {
