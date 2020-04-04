@@ -103,8 +103,6 @@ function integrate() {
     let r21j = y2 - y1; // y1 - 22
     let r21k = z2 - z1; // z1 - z2
 
-    
-
     let r21 = Math.sqrt(
         Math.pow(r21i, 2) + Math.pow(r21j, 2) + Math.pow(r21j, 2)
     );
