@@ -1,0 +1,350 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+    overflow: hidden;
+}
+
+input:focus {
+    background-color: #494949;
+    outline: none;
+    border: 3px solid #ff3758;
+    caret-color: #ffffff;
+    color: #ffffff;
+}
+  
+.headers h3 {
+    position: absolute;
+    color: white;
+}
+
+#c_1 {
+    color: #ffffff;
+    margin-left: 1110px;
+    margin-top: 30px;
+}
+
+#c_2 {
+    color: #ffffff;
+    margin-left: 1110px;
+    margin-top: 190px;
+}
+
+#h_1 {
+    color: rgb(255, 50, 50);
+    margin-left: 1110px;
+    margin-top: 64px;
+}
+
+#h_2 {
+    color: rgb(54, 255, 121);
+
+    margin-left: 1110px;
+    margin-top: 98px;
+}
+
+#h_3 {
+    color: rgb(30, 30, 255);
+    margin-left: 1110px;
+    margin-top: 130px;
+}
+
+#h_4 {
+    color: rgb(255, 50, 50);
+    margin-left: 1110px;
+    margin-top: 230px;
+}
+
+#h_5 {
+    color: rgb(54, 255, 121);
+    margin-left: 1110px;
+    margin-top: 265px;
+}
+
+#h_6 {
+    color: rgb(30, 30, 255);
+    margin-left: 1110px;
+    margin-top: 305px;
+}
+
+.Inputs {
+    margin-left: 1160px;
+    position: absolute;
+}
+.Inputs2 {
+    margin-left: 1160px;
+    margin-top: 187px;
+    position: absolute;
+}
+
+#q1 {
+    width: 50px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 30px;
+}
+
+#qP {
+    width: 50px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 30px;
+}
+
+#input1 {
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+}
+
+#input2 {
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+#input3 {
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+#q2 {
+    width: 50px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: -20px;
+}
+
+#qP2 {
+    width: 50px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: -20px;
+}
+
+#input4 {
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+#input5 {
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+#input6 {
+    padding: 2px;
+    border-radius: 4px;
+    border: 2 solid black;
+    margin-top: 10px;
+}
+
+.answer {
+    margin-top: 350px;
+    margin-left: 1100px;
+    position: absolute;
+}
+
+.about_btn {
+    margin-top: 430px;
+    margin-left: 1120px;
+    position: absolute;
+}
+
+.text {
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.text2 {
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.inline {
+    display: inline;
+}
+
+#p1 {
+    color: #ffffff;
+}
+
+.line {
+    margin-bottom: -5px;
+    margin-left: 75px;
+}
+
+.divide {
+    margin-top: -10px;
+}
+
+.bDiv {
+    margin-top: -0.01px;
+}
+
+.left {
+    margin-left: 45px;
+}
+
+.left1 {
+    margin-left: 35px;
+}
+.button {
+    color: #ffffff;
+    background: #ff2436;
+    margin-left: 40px;
+    height: 45px;
+    width: 150px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.35s;
+}
+
+.button:hover {
+    color: #e2e2e2;
+    background: #d61e2e;
+}
+
+@media only screen and (max-width: 768px) {
+    .Inputs {
+        margin-left: 850px !important;
+    }
+    .Inputs2 {
+        margin-top: 320px !important;
+        margin-left: 850px !important;
+    }
+    #q1 {
+        width: 100px !important;
+        height: 40px !important;
+    }
+    #qP {
+        width: 100px !important;
+        height: 40px !important;
+    }
+    #q2 {
+        width: 100px !important;
+        height: 40px !important;
+    }
+    #qP2 {
+        width: 100px !important;
+        height: 40px !important;
+    }
+    input {
+        margin-top: 40px !important;
+        font-size: 30px !important;
+    }
+    #input1 {
+        width: 250px !important;
+        height: 40px !important;
+    }
+    #input2 {
+        width: 250px !important;
+        height: 40px !important;
+    }
+    #input3 {
+        width: 250px !important;
+        height: 40px !important;
+    }
+    #input4 {
+        width: 250px !important;
+        height: 40px !important;
+    }
+    #input5 {
+        width: 250px !important;
+        height: 40px !important;
+    }
+    #input6 {
+        width: 250px !important;
+        height: 40px !important;
+    }
+
+    .answer {
+        width: 150% !important;
+        margin-top: 50px !important;
+        margin-left: 80px !important;
+    }
+    .text {
+        font-size: 48px !important;
+    }
+    .about_btn {
+        margin-top: 700px;
+        margin-left: 810px;
+    }
+    .button {
+        width: 250px !important;
+        height: 85px !important;
+        font-size: 40px !important;
+    }
+    #c_1 {
+        width: 100% !important;
+        font-size: 40px !important;
+        margin-left: 750px !important;
+        margin-top: 35px !important;
+    }
+    #c_2 {
+        width: 100% !important;
+        font-size: 40px !important;
+        margin-left: 750px !important;
+        margin-top: 360px !important;
+    }
+    #h_1 {
+        width: 100% !important;
+        font-size: 40px !important;
+        margin-left: 750px !important;
+        margin-top: 115px !important;
+    }
+    #h_2 {
+        width: 100% !important;
+        font-size: 40px !important;
+        margin-left: 750px !important;
+        margin-top: 195px !important;
+    }
+    #h_3 {
+        width: 100% !important;
+        font-size: 40px !important;
+        margin-left: 750px !important;
+        margin-top: 275px !important;
+    }
+    #h_4 {
+        width: 100% !important;
+        font-size: 40px !important;
+        margin-left: 750px !important;
+        margin-top: 435px !important;
+    }
+    #h_5 {
+        width: 100% !important;
+        font-size: 40px !important;
+        margin-left: 750px !important;
+        margin-top: 515px !important;
+    }
+    #h_6 {
+        width: 100% !important;
+        font-size: 40px !important;
+        margin-left: 750px !important;
+        margin-top: 595px !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .answer {
+        width: 200% !important;
+        margin-top: 50px !important;
+        margin-left: 60px !important;
+    }
+    .text {
+        font-size: 45px !important;
+    }
+}
