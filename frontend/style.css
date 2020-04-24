@@ -12,7 +12,7 @@ input:focus {
     caret-color: #ffffff;
     color: #ffffff;
 }
-  
+
 .headers h3 {
     position: absolute;
     color: white;
@@ -152,13 +152,15 @@ input:focus {
 }
 
 .answer {
-    margin-top: 350px;
-    margin-left: 1100px;
+    margin-top: 30px !important;
+    left: 30%;
+    translate: transform(0, -30%);
+    ms-translate: transform(0, -30%);
     position: absolute;
 }
 
 .about_btn {
-    margin-top: 430px;
+    margin-top: 380px;
     margin-left: 1120px;
     position: absolute;
 }
@@ -218,6 +220,12 @@ input:focus {
     background: #d61e2e;
 }
 
+.note{
+    color: #5d5d5d;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
 @media only screen and (max-width: 768px) {
     .Inputs {
         margin-left: 850px !important;
@@ -272,12 +280,12 @@ input:focus {
     }
 
     .answer {
-        width: 150% !important;
+        width: 200% !important;
         margin-top: 50px !important;
-        margin-left: 80px !important;
+        left: 10% !important;
     }
     .text {
-        font-size: 48px !important;
+        font-size: 35px !important;
     }
     .about_btn {
         margin-top: 700px;

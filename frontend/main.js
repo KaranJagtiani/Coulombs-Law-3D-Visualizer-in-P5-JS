@@ -31,20 +31,36 @@ class Particle {
     }
 }
 
+function roundOff(value, decimals) {
+    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
 function formatStr(str) {
-    var res;
-    if (str == "NaN")
-        res = String("0");
-    else {
-        res = str.substring(0, 4);
+    let count = 0, j = 0, i;
+    let final = '', num;
+    if(str.length != 1){
+        num = String(Number(str).toExponential());
+        if(num[0] != '-')
+            final = String(num).substr(0, 4);
+        else
+            final = String(num).substr(0, 5);
+            
+        for(i = 0; i<num.length; i++){
+            if(num[i] == 'e')
+                break;
+            count++;
+        }
+        final = final + num.substr(count, num.length);
+        return final;
     }
-    return res;
+    return "0";
 }
 
 function integrate() {
     // First Particle Charge
     var Q1 = document.getElementById("q1").value;
     var qP = document.getElementById("qP").value;
+
     Q1 *= Math.pow(10, qP);
 
     // First Particle Coordinate (x, y, z) Input
@@ -59,7 +75,7 @@ function integrate() {
 
     // Displaying First Particle
     push();
-    if (x1) {
+    if (x1 || y1 || z1) {
         translate(-535, 270, 0);
         ambientMaterial(250);
         transBox(x1, y1, z1);
@@ -70,6 +86,7 @@ function integrate() {
     // Second Particle Charge
     var Q2 = document.getElementById("q2").value;
     var qP2 = document.getElementById("qP2").value;
+
     Q2 *= Math.pow(10, qP2);
 
     // Second Particle Coordinate (x, y, z) Input
@@ -80,10 +97,10 @@ function integrate() {
     x2 *= 35;
     y2 *= (-35);
     z2 *= (-35);
-    
+
     // Displaying Second Particle
     push();
-    if (x2) {
+    if (x2 || y2 || z2) {
         translate(-535, 270, 0);
         ambientMaterial(250);
         transBox(x2, y2, z2);
@@ -104,34 +121,62 @@ function integrate() {
     let r21k = z2 - z1; // z1 - z2
 
     let r21 = Math.sqrt(
-        Math.pow(r21i, 2) + Math.pow(r21j, 2) + Math.pow(r21j, 2)
+        Math.pow(r21i, 2) + Math.pow(r21j, 2) + Math.pow(r21k, 2)
     );
-    
+
+    //console.log("D:", r21, "x1: ", r21i, "xy: ", r21j, "xz: ", r21k);
+
     let r213 = Math.pow(r21, 3);
+    let t1, t2, t3, t4, t5, t6;
 
-    let t1 = (k * r21i * Q1 * Q2) / r213;
-    t1 = formatStr(String(t1));
-    document.getElementById("t1").innerHTML = t1;
+    t1 = (k * r21i * Q1 * Q2) / r213;
+    if(t1){
+        t1 = formatStr(String(t1));
+        document.getElementById("t1").innerHTML = t1;
+    }
+    else
+        document.getElementById("t1").innerHTML = "0";
 
-    let t2 = (k * r21j * Q1 * Q2) / r213;
-    t2 = formatStr(String(t2));
-    document.getElementById("t2").innerHTML = t2;
+    t2 = (k * r21j * Q1 * Q2) / r213;
+    if(t2){
+        t2 = formatStr(String(t2));
+        document.getElementById("t2").innerHTML = t2;
+    }
+    else
+        document.getElementById("t2").innerHTML = "0";
 
-    let t3 = (k * r21k * Q1 * Q2) / r213;
-    t3 = formatStr(String(t3));
-    document.getElementById("t3").innerHTML = t3;
+    t3 = (k * r21k * Q1 * Q2) / r213;
+    if(t3){
+        t3 = formatStr(String(t3));
+        document.getElementById("t3").innerHTML = t3;
+    }
+    else
+        document.getElementById("t3").innerHTML = "0";
 
-    let t4 = (k * r21i * Q1 * Q2) / r213;
-    t4 = formatStr(String(t4));
-    document.getElementById("t4").innerHTML = t4;
 
-    let t5 = (k * r21j * Q1 * Q2) / r213;
-    t5 = formatStr(String(t5));
-    document.getElementById("t5").innerHTML = t5;
+    t4 = (k * r21i * Q1 * Q2) / r213;
+    if(t4){
+        t4 = formatStr(String(t4));
+        document.getElementById("t4").innerHTML = t4;
+    }
+    else
+        document.getElementById("t4").innerHTML = "0";
 
-    let t6 = (k * r21k * Q1 * Q2) / r213;
-    t6 = formatStr(String(t6));
-    document.getElementById("t6").innerHTML = t6;
+    t5 = (k * r21j * Q1 * Q2) / r213;
+    if(t5){
+        t5 = formatStr(String(t5));
+        document.getElementById("t5").innerHTML = t5;
+    }
+    else
+        document.getElementById("t5").innerHTML = "0";
+
+    t6 = (k * r21k * Q1 * Q2) / r213;
+    if(t6){
+        t6 = formatStr(String(t6));
+        document.getElementById("t6").innerHTML = t6;
+    }
+    else
+        document.getElementById("t6").innerHTML = "0";
 }
 
 
@@ -187,7 +232,7 @@ function draw() {
         pop();
         a1 = a1 - 35;
     }
-    
+
     var b1 = 235;
     // Points on the Y-Axis, denoted by Green Color
     for (var i = 0; i < 15; i++) {
