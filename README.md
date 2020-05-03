@@ -1,13 +1,19 @@
 # Coulombs-Law-3D-Visualizer-in-P5-JS
-Coulomb's Law 3D Visualizer built using P5-JS and Node JS
+Coulomb's Law 3D Visualizer built using P5-JS and Node JS.
 
-## Coulomb's law vector form 3D visualizer built using:
-* P5 JS
-* Node JS
+## This visualizer is built using:
+
+### 1) Frontend
+  * P5 JS
+  * Bootstrap
+  
+### 2) Backend
+  * Express JS
+  * Node JS
 
 ## Inputs Expected:
-* Charge on the particle 
-* X, Y, &  Z Coordinates (in meters)
+* Charge on the particle.
+* X, Y, &  Z Coordinates (in meters).
 
 ## Examples
 ![](images/visualizer.png)
@@ -41,3 +47,5 @@ node app.js
 ```
 http://localhost:3000/
 ```
+
+## Enjoy!!
